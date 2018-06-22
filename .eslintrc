@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "$": true,
+    "System": true
+  },
+  "rules": {
+    "class-methods-use-this": 0,
+    "default-case": 0,
+    "function-paren-newline": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": 0,
+    "max-len": ["error", { "code": 120 }],
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-nested-ternary": 0,
+    "no-return-assign": ["error", "except-parens"],
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "react/forbid-prop-types": 0,
+    "react/jsx-firsindex-template.ejst-prop-new-line": 0,
+    "react/jsx-max-props-per-line": 0,
+    "react/sort-comp": 0,
+    "jsx-a11y/anchor-is-valid": ["error", {
+      "components": ["Link"],
+      "specialLink": [ "to", "hrefLeft", "hrefRight"],
+      "aspects": ["noHref", "invalidHref", "preferButton"]
+    }]
+  }
+}

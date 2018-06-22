@@ -1,0 +1,117 @@
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.loginForm{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,.1);
+
+  &__dividerLabel {
+    font-size: 18px;
+  }
+
+  &__form {
+    width: 80%;
+
+    span {
+      display: block;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .has-error input {
+      border-color: #dc3545;
+    }
+
+    .floatLabel + label{
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      color: $gray-600;
+      font-size: 16px;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 2px;
+      font-weight: 400;
+      background-color: rgba(255,255,255,0);
+      pointer-events: none;
+      @include transition(color .3s, top .3s, background-color .8s);
+      &.active{
+        top: -19px;
+        color: #555;
+         background-color: rgba(255,255,255,1);
+      }
+    }
+  }
+
+  &__formHeader {
+    font-size: 18px;
+  }
+
+  &__signIn {
+    background: #a2a2a2;
+  }
+
+  &__heading {
+    background-color: #1F1F1F;
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,.95);
+    color: white;
+    font-size: 22px;
+    min-width: 200px;
+    padding: 4px 25px 3px;
+    position: relative;
+    top: -15px;
+    width: 60%;
+  }
+
+  &:focus{
+    outline: 0;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  a, a:hover{
+    text-decoration: none;
+  }
+
+  .facebook-login-container{
+    width: 80%;
+    height: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #4c69ba;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-divider{
+    span:before, span:after{
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid #000;
+      margin: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}

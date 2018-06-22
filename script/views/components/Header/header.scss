@@ -1,0 +1,36 @@
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+nav{
+  .navbar-nav li {
+    cursor: pointer;
+  }
+
+  .img-profile {
+    height: 30px;
+    width: 30px;
+  }
+
+  .navbar .container-fluid {
+    max-width: 1300px;
+  }
+
+  .dropdown-menu {
+    &__item{
+      cursor: pointer;
+
+      &:hover{
+        .btn{
+          background-color: $gray-200;
+        }
+      }
+    }
+  }
+
+  .Header {
+    &__navLink {
+      color: $gray-600;
+    }
+  }
+}
