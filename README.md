@@ -3,7 +3,7 @@ User authentication in SPA, built with Node.js and React (Koa, Passport, Redux, 
 
 ## Preview
 
-![preview](media/auth-flow-in-spa-preview.gif)
+<img src="https://raw.githubusercontent.com/AndrejGajdos/auth-flow-spa-node-react/master/media/auth-flow-in-spa-preview.gif" width="500">
 
 ## Demo
 
