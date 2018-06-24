@@ -8,7 +8,7 @@ import ProfilePlaceholder from 'assets/img/profile_placeholder.png';
 import { isValidURL } from 'utils/utils';
 import './homeView.scss';
 
-class Header extends Component {
+class HomeView extends Component {
   static propTypes = {
     userObj: PropTypes.object,
     getProfile: PropTypes.func,
@@ -107,4 +107,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Header);
+)(HomeView);
