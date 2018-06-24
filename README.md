@@ -1,6 +1,8 @@
 # auth-flow-spa-node-react
 User authentication in SPA, built with Node.js and React (Koa, Passport, Redux, Redux-Saga, React Router). Local authentication, where users can log in using a username and passport and authentication through Facebook.
 
+[Authenticating Users in SPA using Node, Passport, React and Redux](http://andrejgajdos.com/authenticating-users-in-single-page-applications-using-node-passport-react-and-redux/)
+
 ## Preview
 
 <img src="https://raw.githubusercontent.com/AndrejGajdos/auth-flow-spa-node-react/master/media/auth-flow-in-spa-preview.gif" width="500">
