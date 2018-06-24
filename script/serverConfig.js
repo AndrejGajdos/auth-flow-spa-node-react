@@ -6,15 +6,13 @@ const url =
     : `http://localhost:${process.env.PORT || 1337}`;
 
 module.exports.facebookAuth = {
-  clientID: '',
-  clientSecret: '',
+  clientID: process.env.FACEBOOK_CLIENT_ID,
+  clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
   callbackURL: `${url}/auth/facebook/callback`,
 };
 
 module.exports.redisConfig = {
-  host: '',
+  host: process.env.REDIS_HOST,
   port: 14939,
-  password: '',
+  password: process.env.REDIS_PASSWORD,
 };
-
-module.exports.sK = '';

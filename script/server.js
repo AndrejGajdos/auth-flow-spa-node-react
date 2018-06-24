@@ -1,3 +1,4 @@
+require('dotenv').config({ path: require('find-config')('.env') });
 const Koa = require('koa');
 const Router = require('koa-router');
 const koaLogger = require('koa-logger');
@@ -18,7 +19,7 @@ const app = new Koa();
 app.proxy = true;
 
 // sessions
-app.keys = [config.sK];
+app.keys = [process.env.KOA_SESSION_SECRET];
 
 // create database with one user
 const db = redis.createClient(includes(process.env.NODE_ENV, 'prod') ? config.redisConfig : {});
