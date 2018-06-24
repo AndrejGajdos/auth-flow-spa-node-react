@@ -11,7 +11,7 @@ User authentication in SPA, built with Node.js and React (Koa, Passport, Redux, 
 
 ## Configuration
 
-If you want to use authentication through facebook, you need to create a new [facebook app](https://developers.facebook.com/docs/apps/register/), enable OAuth Login in `Settings -> Facebook Login` and add `Valid OAuth Redirect URIs`. Then you need to copy `Client Token` and `App Id` into `./script/serverConfig.js`
+If you want to use authentication with facebook, you need to create a new [facebook app](https://developers.facebook.com/docs/apps/register/), enable OAuth Login in `Settings -> Facebook Login` and add `Valid OAuth Redirect URIs`. Then you need to copy `Client Token` and `App Id` into [.env](https://www.npmjs.com/package/dotenv) file in root of project folder.
 
 ## Install and Run
 
